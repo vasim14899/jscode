@@ -40,10 +40,15 @@ let myObj = {
 console.log(myObj.name);
 
 
+
+
+
+
+
 const myfunction = function(myfirstname) {
-    console.log("Hello " + myfirstname);
+    const greeting = "Hello " + myfirstname;
+    console.log(greeting);
+    return greeting;
 };
 
-console.log(myfunction("vasim"))
-
-
+console.log(myfunction("vasim"));  // Now this will log twice: once from inside the function, and once with the return value
